@@ -15,7 +15,7 @@ import (
 var store cqrs.EventStore
 
 func init() {
-	store = cqrs.NewInMemoryEventStore()
+	store = cqrs.NewEventStore()
 	InitAccounts(store)
 }
 
