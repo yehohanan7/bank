@@ -53,7 +53,7 @@
 			"importpath": "github.com/yehohanan7/cqrs",
 			"repository": "https://github.com/yehohanan7/cqrs",
 			"vcs": "git",
-			"revision": "bf16330b555f6212d3ed701358454d2d4101b21f",
+			"revision": "9b5c5504d75e5c79426b2a7ca7a09d52b20899d5",
 			"branch": "master",
 			"notests": true
 		},
