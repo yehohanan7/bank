@@ -1,6 +1,6 @@
 # -*- restclient -*-
 
-:account_id = d1e42dc5-0972-4c65-b9ea-61c0b19e0069
+:account_id = d75f3dac-fc8c-4802-9b13-321361a594bb
 
 #Add new account
 POST http://localhost:3000/accounts
@@ -21,7 +21,7 @@ Content-type: application/json
 GET http://localhost:3000/accounts/:account_id/summary
 
 #Event feed
-GET http://localhost:3000/events
+GET http://localhost:3000/events?offset=3
 
 #Event
 GET http://localhost:3000/events/609ea3ce-c8be-4401-868f-814571eb7325
