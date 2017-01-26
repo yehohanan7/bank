@@ -59,7 +59,7 @@ func main() {
 	router.HandleFunc("/accounts/{id}/summary", GetSummary).Methods("GET")
 	router.HandleFunc("/accounts/{id}/credit", CreditAccount).Methods("POST")
 	router.HandleFunc("/accounts/{id}/debit", DebitAccount).Methods("POST")
-	cqrs.EventFeed(router, store)
+	cqrs.EventFeed(router, store, cqrs.JsonFeedGenerator{})
 	http.Handle("/", router)
 	log.Fatal(http.ListenAndServe(":3000", router))
 }
